@@ -11,7 +11,7 @@ export function Content() {
             </div>
             <div className={styles.lineh}></div>
             <div>
-                <h2 className={styles.titulo}>Como o Dr. Natan Pode Ajudar?</h2>
+                <h2 className={styles.titulo}>Desbloqueie sua Conta Bancária.</h2>
                 <p className={styles.contenttexto}>O Dr. Natan é advogado na área do Direito Civil e com amplo conhecimento em desbloqueio bancário e experiência na liberação de valores bloqueados judicialmente. Atuamos com agilidade e estratégia para garantir que seus direitos sejam respeitados e que você tenha acesso ao que é seu por direito.</p>
             </div>
         </div>

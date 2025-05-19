@@ -39,7 +39,7 @@ export function Footer() {
                     <div className={styles.email3whats}>
                         <span className={styles.txt}>WhatsApp</span>
                         <span className={styles.txt}>Clique no botão abaixo!</span>
-                        <a href="https://wa.me/5511942221441?text=Olá%2C+gostaria+de+falar+com+um+especialista" 
+                        <a href="https://wa.me/5511942221441?text=Olá%2C+gostaria+de+desbloquear+minha+conta+bancária" 
                             target="_blank"
                             rel="noopener noreferrer"
                             ><Image src="/logowtapp.png" alt="whatsapp" width={50} height={50} /></a>
