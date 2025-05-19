@@ -77,7 +77,7 @@ export function Footer() {
                     </div>
                     <div className={styles.contatoContent}>
                         <Image    className={styles.iconsf} src="/local.svg" alt="logo" width={20} height={20} />
-                        <span className={styles.txt}>R. Catequese, 289. Butamtan, São Paulo. Sp, CEP: 05502-020</span>
+                        <span className={styles.txt}>R. Catequese, 289. Butantã, São Paulo. Sp, CEP: 05502-020</span>
                     </div> 
                 </div>
 

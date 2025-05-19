@@ -13,7 +13,7 @@ export async function POST(req: NextRequest) {
   try {
     await resend.emails.send({
       from: 'onboarding@resend.dev', // ou use um domínio seu verificado
-      to: 'pedrodanielbraga@gmail.com',
+      to: 'natanmolina@assp.org.br',
       subject: 'Nova mensagem do site',
       text: `Email do cliente: ${email}\n\nMensagem:\n${mensagem}`,
     });
