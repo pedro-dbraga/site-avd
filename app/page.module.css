@@ -12,7 +12,7 @@
 /*Header Container*/
 .header{
   background-color: #242D4C;
-  max-width: 1500px;
+
 }
 .headerbox{
   padding: 1rem 1.5rem 0.5rem 1.5rem;
@@ -23,6 +23,7 @@
   font-weight: 300;
   font-size: 24px;
   margin: auto;
+    max-width: 1500px;
 }
 .namemobile{
   display:block;

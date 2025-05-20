@@ -73,7 +73,7 @@ export function Footer() {
                     </div>
                     <div className={styles.contatoContent}>
                         <Image    className={styles.iconsf} src="/mail.svg" alt="logo" width={20} height={16} />
-                        <span className={styles.txt}>natanmolina@assp.org.br</span>
+                        <span className={styles.txt}>natanmolina@aasp.org.br</span>
                     </div>
                     <div className={styles.contatoContent}>
                         <Image    className={styles.iconsf} src="/local.svg" alt="logo" width={20} height={20} />
