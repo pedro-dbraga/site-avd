@@ -269,7 +269,7 @@
   .notmobile{
   display:block;
 }
-  .header{
+  .headerbox{
     padding: 1rem 5rem 0.5rem 5rem;
   }
   .logo{
@@ -343,8 +343,8 @@
   .notmobile{
   display:block;
 }
-  .header{
-    padding: 1.5rem 5rem;
+  .headerbox{
+    padding: 1rem 5rem 0.5rem 5rem;
   }
   /*Content*/
   .content{

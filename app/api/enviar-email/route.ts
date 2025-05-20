@@ -12,8 +12,8 @@ export async function POST(req: NextRequest) {
 
   try {
     await resend.emails.send({
-      from: 'onboarding@resend.dev',
-      to: 'natanmolina@aasp.org.br',
+      from: 'Acme <onboarding@resend.dev>',
+      to: ['natanmolina@aasp.org.br'],
       subject: 'Nova mensagem do site',
       text: `Email do cliente: ${email}\n\nMensagem:\n${mensagem}`,
     });
