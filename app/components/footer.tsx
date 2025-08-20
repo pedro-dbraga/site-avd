@@ -39,7 +39,7 @@ export function Footer() {
                     <div className={styles.email3whats}>
                         <span className={styles.txt}>WhatsApp</span>
                         <span className={styles.txt}>Clique no botão abaixo!</span>
-                        <a href="https://wa.me/5511942221441?text=Olá%2C+gostaria+de+desbloquear+minha+conta+bancária" 
+                        <a href="https://wa.me/5511921091441?text=Olá%2C+gostaria+de+desbloquear+minha+conta+bancária" 
                             target="_blank"
                             rel="noopener noreferrer"
                             ><Image src="/logowtapp.png" alt="whatsapp" width={50} height={50} /></a>
@@ -69,7 +69,7 @@ export function Footer() {
                 <div className={styles.contatobox}>
                     <div className={styles.contatoContent}>
                         <Image  className={styles.iconsf} src="/phone.svg" alt="logo" width={18} height={18} />
-                        <span className={styles.txt}>(11)942221441</span>
+                        <span className={styles.txt}>(11) 92109-1441</span>
                     </div>
                     <div className={styles.contatoContent}>
                         <Image    className={styles.iconsf} src="/mail.svg" alt="logo" width={20} height={16} />
@@ -77,7 +77,7 @@ export function Footer() {
                     </div>
                     <div className={styles.contatoContent}>
                         <Image    className={styles.iconsf} src="/local.svg" alt="logo" width={20} height={20} />
-                        <span className={styles.txt}>R. Catequese, 289. Butantã, São Paulo. Sp, CEP: 05502-020</span>
+                        <span className={styles.txt}>Avenida Paulista nº 1439, 1º andar conjunto 12, Bela Vista, São Paulo/Sp, CEP: 01311-926</span>
                     </div> 
                 </div>
 
