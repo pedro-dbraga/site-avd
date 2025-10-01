@@ -24,14 +24,27 @@ export function About() {
             <div className={styles.lineh}></div>
             <div>
             <h2 className={`${styles.titulo} ${styles.tabout}`}>Sobre o Dr. Natan Iague Molina</h2>
-            <div  className={styles.quemsou}>
-                <Image src="/fotona.png" alt="fotoNatan" width={129} height={204}/>
+            <div className={styles.namemobile}>
+                <div  className={styles.quemsou}>
+                <Image className={styles.fotona} src="/fotonaperfil.png" alt="fotoNatan" width={158} height={158}/>
+                <div>
+                    <p className={styles.size}>Advogado com sólida formação e atuação nas áreas de Direito Bancário,Empresarial e Tributário.</p>
+                    <p className={styles.size}>Pós-graduado em Direito Tributário pela PUC-SP, Natan Iague Molina possui experiência no contencioso e consultivo cível e societário, atendendo demandas estratégicas e massificadas. </p>
+                </div>
+            </div>
+            <p className={styles.size}>Atuou em escritórios renomados e órgãos públicos, com forte presença em contratos, execuções fiscais e planejamento tributário.</p>
+            </div>
+            <div className={styles.notmobile}>
+                    <div  className={styles.quemsou}>
+                <Image className={styles.fotona} src="/fotonaperfil.png" alt="fotoNatan" width={158} height={158}/>
                 <div>
                     <p className={styles.size}>Advogado com sólida formação e atuação nas áreas de Direito Bancário,Empresarial e Tributário.</p>
                     <p className={styles.size}>Pós-graduado em Direito Tributário pela PUC-SP, Natan Iague Molina possui experiência no contencioso e consultivo cível e societário, atendendo demandas estratégicas e massificadas. </p>
                     <p className={styles.size}>Atuou em escritórios renomados e órgãos públicos, com forte presença em contratos, execuções fiscais e planejamento tributário.</p>
                 </div> 
             </div>
+            </div>
+            
         </div>
         </div>
     </div>

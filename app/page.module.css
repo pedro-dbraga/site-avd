@@ -4,11 +4,7 @@
   background-color: #DAA520;
   width: 100%;
 }
-.linew{
-  height: 183px;
-  width: 1px;
-  background-color: #DAA520;
-}
+
 /*Header Container*/
 .header{
   background-color: #242D4C;
@@ -20,10 +16,11 @@
   justify-content: space-between;
   align-items: center;
   color: #DAA520;
-  font-weight: 300;
+  font-weight: 200;
   font-size: 24px;
   margin: auto;
-    max-width: 1500px;
+  max-width: 1500px;
+  font-family: 'Times New Roman', Times, serif;
 }
 .namemobile{
   display:block;
@@ -37,7 +34,7 @@
 }
 /*Content Container*/
 .content{
-  padding: 1rem  1.5rem 0rem  1.5rem;
+  padding: 1rem  1.5rem 1rem  1.5rem;
   max-width: 1500px;
   margin: auto;
   display: flex;
@@ -49,6 +46,13 @@
   font-weight: 400;
   color: #000000;
   font-family: Poppins, sans-serif;
+}
+.firstcontent{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 .contentsubtit{
   font-size: 1rem;
@@ -63,6 +67,36 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+.buttonwtapp{
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.75em;
+  background: #15141A;
+  width: 342px;
+  margin: auto;
+}
+.insidewtapp{
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid #15141A;
+  border-radius: 0.75em;
+  padding: 0.75em 1.5em;
+  background: #00E676;
+  color: #15141A;
+  transform: translateY(-0.2em);
+  transition: transform 0.1s ease;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.buttonwtapp:hover .insidewtapp {
+  transform: translateY(-0.33em);
+}
+.buttonwtapp:active .insidewtapp {
+  transform: translateY(0);
+}
+
 /*About Container*/
 .about{
   background-color: #242D4C;
@@ -153,38 +187,69 @@
   flex-direction: column;
   gap:30px;
 }
-.email3whats{
+.whatsbox{
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
 }
+.form{
+  background-color: #242D4C;
+  border: #DAA520 2px solid;
+  width:347px;
+  border-radius: 16px;
+  box-shadow:  -5px -5px 8px #0e121e,
+             2px 2px 8px #3a487a;
+}
+.email3whats{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 270px;
+  margin: 16px auto;
+}
+.tittxt{
+  font-size: 1rem;
+  font-weight: 200;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 16px;
+}
 .input{
   font-size: 1rem;
   font-weight: 200;
   border-radius: 6px;
-  width:300px;
+  width:270px;
   height: 1.5rem;
   text-decoration: none;
   padding: 0.25rem;
+  border:none;
 }
 .inputtxt{
   font-size: 1rem;
   font-weight: 200;
   border-radius: 6px;
-  width:300px;
-  height: 4.5rem;
+  width:270px;
+  height: 150px;
   text-decoration: none;
   padding: 0.25rem;
 }
 .button{
-  background-color: #242D4C;
-  color: #DAA520;
+  background-color: #DAA520;
+  color: #15141A;
   padding: 0.25rem 1.5rem;
-  font-size: 1rem;
+  font-size: 0.75rem;
   font-weight: 200;
   text-decoration: none;
   box-shadow: none;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 16px;
+  height:28px;
 }
 .resp{
   color: #fff;
@@ -193,7 +258,7 @@
 }
 .contato{
   color: #fff;
-  padding: 1rem 1.5rem;
+  padding: 1.5rem 1.5rem;
   font-size: 1rem;
   display: flex;
   justify-content: left;
@@ -228,6 +293,9 @@
   text-align: center;
   font-weight: 200;
 }
+  .fotof{
+    display:none;
+  }
 /*Tablet*/
 
 @media (min-width: 640px) and (max-width: 1022px) {
@@ -250,18 +318,14 @@
   .size{
     font-size: 1rem;
   }
-  .espcontent{
-    flex-direction: row-reverse;
-  }
-  .email3whats{
-    height: 183px;
-    width: 300px;
-  }
 }
 
 /*Desktop*/
 
 @media (min-width: 1023px) and (max-width: 1279px) {
+  .lineh{
+  margin: 24px 0;
+}
   /*header*/
     .namemobile{
   display:none;
@@ -278,13 +342,21 @@
 }
   /*Content*/
   .content{
-    padding: 2rem 5rem 1.5rem 5rem;
+    padding: 0rem 0rem 1.5rem 5rem;
+  }
+    .firstcontent{
+    display:flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 2rem;
   }
   .titulo{
     font-size: 1.5rem;
+    font-weight: 200;
   }
   .contentsubtit{
-    font-size: 1.25rem;
+    font-size: 1rem;
+    font-weight: 200;
   }
   .contenttexto{
     font-size: 1.25rem;
@@ -314,28 +386,42 @@
     font-size: 1.25rem;
   }
   /*Footer*/
+  .especialistabox {
+  padding: 32px 80px;
+  margin:auto;
+  max-width: 1500px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.espdesktop{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.tesp{
+  font-size: 2rem;
+  font-weight: 200;
+}
   .contato{
     gap: 1.5em;
+    padding: 32px 80px;
   }
   .contatobox{
     flex-direction: row;
     justify-content: center;
     gap: 1 rem;
   }
-  .espcontent{
-    flex-direction: row-reverse;
-  }
-  .email3whats{
-    height: 183px;
-    width: 300px;
-  }
-  .input{
-    width: 300px;
+  .fotof{
+    display:block;
   }
 }
 /*SuperMonitor*/
 
 @media (min-width: 1280px){
+.lineh{
+  margin: 24px 0;
+}
   /*header*/
     .namemobile{
   display:none;
@@ -347,8 +433,17 @@
     padding: 1rem 5rem 0.5rem 5rem;
   }
   /*Content*/
+  .firstcontent{
+    display:flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .fotocontent{
+    width:635px;
+    height:585px;
+  }
   .content{
-    padding: 2rem 5rem 1.5rem 5rem;
+    padding: 0rem 5rem 1.5rem 5rem;
   }
   .titulo{
     font-size: 1.5rem;
@@ -360,8 +455,14 @@
     font-size: 1.25rem;
   }
   /*About*/
+  .fotona{
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  }
   .aboutbox{
-    padding: 1.5rem 5rem;
+    padding: 48px 5rem;
+ 
   }
   .tabout{
     text-align: center;
@@ -389,14 +490,30 @@
     justify-content: center;
     gap: 1rem;
   }
-  .espcontent{
-    flex-direction: row-reverse;
-  }
-  .email3whats{
-    height: 183px;
-    width: 300px;
-  }
-  .input{
-    width: 300px;
+  .especialistabox {
+  padding: 48px 80px;
+  margin:auto;
+  max-width: 1500px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.tesp{
+  font-size: 2rem;
+  font-weight: 200;
+}
+.espdesktop{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.fotof{
+  border-radius: 8px;
+  display:block;
+}
+
+  .contato{
+    gap: 2.5em;
+    padding: 48px 80px;
   }
 }

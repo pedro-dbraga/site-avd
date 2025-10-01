@@ -7,6 +7,7 @@ import styles from '../page.module.css';
 export function Footer() {
   
   const [email, setEmail] = useState('');
+  const [celular, setCelular] = useState('');
   const [mensagem, setMensagem] = useState('');
   const [resposta, setResposta] = useState('');
 
@@ -16,12 +17,13 @@ export function Footer() {
     const res = await fetch('/api/enviar-email', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email, mensagem }),
+      body: JSON.stringify({ email,celular, mensagem }),
     });
 
     const texto = await res.text();
     if (res.ok) {
       setEmail('');
+      setCelular('');
       setMensagem('');
       setResposta(texto);
     } else {
@@ -34,33 +36,45 @@ export function Footer() {
                 <div className={styles.especialistabox}>
                     <div className={styles.lineh}></div>
                     <h2 className={styles.tesp}>Fale com um Especialista</h2>
-                    <div className={styles.espcontent}>
-                    
-                    <div className={styles.email3whats}>
+                    <div className={styles.espdesktop}>
+                        <div className={styles.espcontent}>
+                        <div className={styles.whatsbox}>
                         <span className={styles.txt}>WhatsApp</span>
                         <span className={styles.txt}>Clique no botão abaixo!</span>
-                        <a href="https://wa.me/5511921091441?text=Olá%2C+gostaria+de+desbloquear+minha+conta+bancária" 
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            ><Image src="/logowtapp.png" alt="whatsapp" width={50} height={50} /></a>
-                    </div>
-                    <div className={`${styles.linew} ${styles.notmobile}`}></div>
-                    <div className={`${styles.lineh} ${styles.namemobile}`}></div>
-                    <form onSubmit={handleSubmit} className="space-y-4">
+                        <div  className={styles.buttonwtapp}>
+                            <a className={styles.insidewtapp} href="https://wa.me/5511921091441?text=Olá%2C+gostaria+de+desbloquear+minha+conta+bancária" 
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                <Image className={styles.wtapp} src="/logowtapp.png" alt="balance"  width={24} height={24}/><span>FALE COM UM ESPECIALISTA</span>
+                            </a>
+                        </div>
+                        </div>
+                        <form onSubmit={handleSubmit} className={`space-y-4 ${styles.form}`}>
                         <div className={styles.email3whats}>
-                        <span className={styles.txt}>Email</span>
-                        <input className={styles.input}type="email"
-                            value={email}
-                            onChange={e => setEmail(e.target.value)}
-                            required/>
-                        <textarea className={styles.inputtxt}  value={mensagem}
+                            <span className={styles.tittxt}>Contatar</span>
+                            <span className={styles.txt}>Email</span>
+                            <input className={styles.input}type="email"
+                                value={email}
+                                onChange={e => setEmail(e.target.value)}
+                                required
+                                placeholder="exemplo@email.com"/>
+                            <span className={styles.txt}>Celular</span>
+                            <input className={styles.input}type="celular"
+                                value={celular}
+                                onChange={e => setCelular(e.target.value)}
+                                required
+                                placeholder="(DDD) 9 9999-9999"/>
+                            <textarea placeholder="Escreva aqui sua mensagem ou dúvida." className={styles.inputtxt}  value={mensagem}
                                 onChange={e => setMensagem(e.target.value)}
                                 required/>
-                        <button className={styles.button}>Enviar</button>
-                        {<p className={styles.resp}>{resposta}</p>}
+                            <button className={styles.button}>Enviar</button>
+                            {<p className={styles.resp}>{resposta}</p>}
                         </div>
-                    </form>
-                </div>
+                        </form>
+                        </div>
+                        <Image className={styles.fotof} src="/contatenos.jpg" alt="fotocelular" width={377} height={566}/>
+                    </div>
+                    
                 </div>
             </div>
             <div className={styles.contato}>
